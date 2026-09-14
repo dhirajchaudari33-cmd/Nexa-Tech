@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; About | NexaTech Solutions</title>
+  <meta name="description" content="Learn about NexaTech Solutions and get in touch to discuss your next web application project.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="NexaTech Solutions home">
+        <img src="images/logo.svg" alt="" width="32" height="32">
+        <span>NexaTech Solutions</span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact / About</a></li>
+        </ul>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">
+          <span class="visually-hidden">Toggle dark mode</span>
+          <span aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <h1>About &amp; Contact</h1>
+        <p class="lead">We're a small front-end and full-stack team based in Melbourne, working with technology-driven businesses across Australia.</p>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div>
+          <h2 id="about-heading">Our story</h2>
+          <p>NexaTech Solutions started in 2018 when three developers, frustrated with clunky internal tools at their day jobs, decided to build better ones for a living. Today we're a small studio that partners with growing technology, retail, and service businesses to design software people genuinely enjoy using.</p>
+          <p>We favour clean, maintainable code and honest timelines over flashy promises &mdash; and we always start with a working front-end prototype before committing to a full build.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <img src="images/avatar-1.svg" alt="Illustrated avatar of Priya Nair" width="96" height="96">
+            <h3>Priya Nair</h3>
+            <p>Founder &amp; Lead Developer</p>
+          </article>
+          <article class="team-card">
+            <img src="images/avatar-2.svg" alt="Illustrated avatar of Daniel Osei" width="96" height="96">
+            <h3>Daniel Osei</h3>
+            <p>UX &amp; Accessibility Lead</p>
+          </article>
+          <article class="team-card">
+            <img src="images/avatar-3.svg" alt="Illustrated avatar of Mei Lin" width="96" height="96">
+            <h3>Mei Lin</h3>
+            <p>Cloud &amp; Infrastructure</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-form-wrap">
+          <h2 id="contact-heading">Send us a message</h2>
+          <p>Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span> are required.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required aria-describedby="fullNameError">
+              <p class="error-message" id="fullNameError" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="emailError">
+              <p class="error-message" id="emailError" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone number (optional)</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phoneError">
+              <p class="error-message" id="phoneError" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="subject">Subject <span aria-hidden="true">*</span></label>
+              <select id="subject" name="subject" required aria-describedby="subjectError">
+                <option value="">Please choose one&hellip;</option>
+                <option value="new-project">New project enquiry</option>
+                <option value="support">Existing client support</option>
+                <option value="careers">Careers</option>
+                <option value="other">Other</option>
+              </select>
+              <p class="error-message" id="subjectError" role="alert"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="messageError"></textarea>
+              <p class="error-message" id="messageError" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h2>Other ways to reach us</h2>
+          <address>
+            <p><strong>Address</strong><br>29 Collins Street, Melbourne VIC 3000</p>
+            <p><strong>Email</strong><br><a href="mailto:hello@nexatech.example">hello@nexatech.example</a></p>
+            <p><strong>Phone</strong><br><a href="tel:+61390000000">(03) 9000 0000</a></p>
+            <p><strong>Hours</strong><br>Monday&ndash;Friday, 9am&ndash;5pm AEST</p>
+          </address>
+          <div class="map-placeholder" role="img" aria-label="Illustrated map showing NexaTech Solutions' office location in Melbourne">
+            <img src="images/map.svg" alt="" width="100%" height="200">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-footer">
+          <img src="images/logo.svg" alt="" width="28" height="28">
+          <span>NexaTech Solutions</span>
+        </a>
+        <p>Practical software for teams who'd rather build than wait.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Site</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact / About</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <address>
+          <p>29 Collins Street, Melbourne VIC</p>
+          <p><a href="mailto:hello@nexatech.example">hello@nexatech.example</a></p>
+          <p><a href="tel:+61390000000">(03) 9000 0000</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> NexaTech Solutions. Student project for ICT203 Web Application Development.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-hidden="true">
+  <rect width="400" height="260" fill="#eaf7f1"/>
+  <rect x="30" y="30" width="340" height="200" rx="8" fill="#ffffff" stroke="#bfe6d5" stroke-width="2"/>
+  <rect x="30" y="30" width="340" height="34" rx="8" fill="#0f9d78"/>
+  <g fill="#eaf7f1">
+    <rect x="50" y="80" width="36" height="30" rx="4"/>
+    <rect x="96" y="80" width="36" height="30" rx="4"/>
+    <rect x="142" y="80" width="36" height="30" rx="4"/>
+    <rect x="188" y="80" width="36" height="30" rx="4"/>
+    <rect x="234" y="80" width="36" height="30" rx="4"/>
+    <rect x="280" y="80" width="36" height="30" rx="4"/>
+    <rect x="50" y="120" width="36" height="30" rx="4"/>
+    <rect x="96" y="120" width="36" height="30" rx="4"/>
+    <rect x="188" y="120" width="36" height="30" rx="4"/>
+    <rect x="280" y="120" width="36" height="30" rx="4"/>
+    <rect x="50" y="160" width="36" height="30" rx="4"/>
+    <rect x="142" y="160" width="36" height="30" rx="4"/>
+    <rect x="234" y="160" width="36" height="30" rx="4"/>
+  </g>
+  <rect x="142" y="120" width="36" height="30" rx="4" fill="#0f9d78"/>
+  <rect x="234" y="120" width="36" height="30" rx="4" fill="#ff8a00"/>
+  <rect x="96" y="160" width="36" height="30" rx="4" fill="#0f9d78"/>
+</svg>
